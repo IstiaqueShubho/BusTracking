@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.istiaque.bustracking.openingactivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:text="Are You the Driver or Passanger?"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/driver"
+            app:layout_constraintTop_toBottomOf="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver"
+            android:textStyle="bold"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="50dp"/>
+        <Button
+            android:id="@+id/passanger"
+            app:layout_constraintTop_toBottomOf="@+id/text1"
+            app:layout_constraintLeft_toRightOf="@+id/driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passanger"
+            android:textStyle="bold"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="200dp"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
